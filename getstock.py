@@ -28,7 +28,7 @@ def main():
     print("Name" + sp*" " + "DG stock " + "Mouser Stock")
 
     # iterate through excel and display data
-    for row in sh.iter_rows(min_row=3, values_only=True):
+    for row in sh.iter_rows(min_row=2, values_only=True):
         name = row[0]
         urlDG = row[1]
         urlM = row[2]
@@ -54,11 +54,13 @@ def main():
         # # avail = table.find(lambda tag: tag.name == 'span' and tag.has_attr('id') and tag['id']=="dkQty")
         # print(table)
 
+        Mstock = "2606"
+
 
 
         sp = 20 - len(name)
         sp2 = 9 - len(DGstock)
-        print(name + sp*" " + DGstock + sp2*" " + "a")
+        print(name + sp*" " + DGstock + sp2*" " + Mstock)
         sleep(10)
     # print(df)
     # stock = re.sub(r'(\r\n *)', "", Data.find("Non-Stock").gettext())
