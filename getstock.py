@@ -9,8 +9,6 @@ import pandas as pd
 # from tqdm import tqdm
 import openpyxl # load_workbook
 
-# https://www.digikey.com/product-detail/en/yageo/RC0402JR-070RL/311-0.0JRTR-ND/726406
-# https://www.digikey.com/product-detail/en/murata-electronics/GRM0335C1H100JA01J/490-17811-2-ND/4358374
 
 def GetData(url):
     # Get the datas from the Digikey page
